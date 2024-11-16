@@ -1201,16 +1201,16 @@ if st.button("Portfolio"):
         st.write(f"Data for {period}")
         st.write(data)
         st.write(f"weights Portfolio for {period}:")
-        fig_data_per = px.bar(data, x='Company', y='Weights', title="weights")
-        st.plotly_chart(fig_data_per, use_container_width=True)
+        fig_data_np_per = px.bar(data, x='Company', y='Weights', title="weights")
+        st.plotly_chart(fig_data_np_per, use_container_width=True)
         
     st.write("Analyze for bottoms in near the money:")
     for period, data in dict_bottoms_near.items():
         st.write(f"Data for {period}")
         st.write(data)
         st.write(f"weights Portfolio for {period}:")
-        fig_data_per = px.bar(data, x='Company', y='Weights', title="weights")
-        st.plotly_chart(fig_data_per, use_container_width=True)
+        fig_data_nb_per = px.bar(data, x='Company', y='Weights', title="weights")
+        st.plotly_chart(fig_data_nb_per, use_container_width=True)
             
             
     st.write("Analyze for peaks in in the money:")
@@ -1218,35 +1218,30 @@ if st.button("Portfolio"):
         st.write(f"Data for {period}")
         st.write(data)
         st.write(f"weights Portfolio for {period}:")
-        fig_data_per = px.bar(data, x='Company', y='Weights', title="weights")
-        st.plotly_chart(fig_data_per, use_container_width=True)
+        fig_data_ip_per = px.bar(data, x='Company', y='Weights', title="weights")
+        st.plotly_chart(fig_data_ip_per, use_container_width=True)
             
     st.write("Analyze for bottoms in in the money:")
     for period, data in dict_bottoms_in.items():
         st.write(f"Data for {period}")
         st.write(data)
         st.write(f"weights Portfolio for {period}:")
-        fig_data_per = px.bar(data, x='Company', y='Weights', title="weights")
-        st.plotly_chart(fig_data_per, use_container_width=True)
+        fig_data_ib_per = px.bar(data, x='Company', y='Weights', title="weights")
+        st.plotly_chart(fig_data_ib_per, use_container_width=True)
             
     st.write("Analyze for peaks in out of the money:")
     for period, data in dict_peaks_out.items():
         st.write(f"Data for {period}")
         st.write(data)
         st.write(f"weights Portfolio for {period}:")
-        fig_data_per = px.bar(data, x='Company', y='Weights', title="weights")
-        st.plotly_chart(fig_data_per, use_container_width=True)
+        fig_data_op_per = px.bar(data, x='Company', y='Weights', title="weights")
+        st.plotly_chart(fig_data_op_per, use_container_width=True)
             
     st.write("Analyze for bottoms in out of the money:")
     for period, data in dict_bottoms_out.items():
         st.write(f"Data for {period}")
         st.write(data)
         st.write(f"weights Portfolio for {period}:")
-        fig_data_per = px.bar(data, x='Company', y='Weights', title="weights")
-        st.plotly_chart(fig_data_per, use_container_width=True)            
-            
-            
-            
-            
-            
-            
+        fig_data_ob_per = px.bar(data, x='Company', y='Weights', title="weights")
+        st.plotly_chart(fig_data_ob_per, use_container_width=True)            
+
